@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: linear-gradient(45deg, #1d0be3 , #ff17b2, rgb(212, 255, 0),rgb(95, 0, 219));
+            background-size: 400% 400%;
+            animation: bgclr 10s infinite ease-in-out ;
+            font-family: 'Edu NSW ACT Foundation', cursive;;
+        }
+        @keyframes bgclr {
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 18rem;
+            margin: 8rem;
+            border: solid 2px white;
+            border-radius: 10px;
+        }
+        h1{
+            font-size: 5rem;
+            color: aliceblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h4{
+            margin-left: 13%;
+            font-size: 20px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"> Go Back to HOME</a>
+    <h1>COUNTDOWN FOR NEW YEAR 2024!</h1>
+    <div class="container">
+        <div class="box1">
+            <h1 id="demo">TIMER WILL DISPLAY HERE</h1>
+            <div class="text">
+                <h4>DAYS</h4>
+                <h4>HOURS</h4>
+                <h4>MINUTES</h4>
+                <h4>SECONDS</h4>
+            </div>
+        </div>
+    </div>
+    <script>
+        //let n = prompt("Enter date in this formate May 23, 2023 10:00:00")
+        let countDown = new Date(" Jan 01,2024 00:00:00").getTime();
+        setInterval(counting,1000)
+        function counting(){
+            let now = new Date();
+            let distence = countDown - now ;
+            let day = Math.floor(distence / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distence % (1000 * 60 *60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distence % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distence % (1000 * 60)) / 1000);
+            document.getElementById('demo').innerHTML = day + " : " + hours + " : " + minutes + " : " + seconds ;
+        }
+    </script>
+</body>
+</html>

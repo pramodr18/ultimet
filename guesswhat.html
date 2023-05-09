@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Number Theory</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left, rgb(255, 0, 225), rgb(0, 234, 255));
+        }
+        .container{
+            background-image: linear-gradient(to bottom right, #D2F6FA, #14D2CB);   
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 5%;
+            margin-left: 14%;
+            margin-right: 14%;
+            border-radius: 40px;
+            box-shadow: 10px 10px rgb(13, 34, 13);
+        }
+        #ckans{
+            cursor: pointer;
+            background-color: rgb(43, 226, 43);
+            border: none;
+            height: 30px;
+            border-radius: 10px;
+            font-weight: bolder;
+            box-shadow: 2px 5px;
+        }
+        #ckans:hover{
+            background-color: red;
+            color: white;
+        }
+        input{
+            height: 30px;
+            border: none;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            align-items: left;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="index.html">Go Back to Home</a>
+     <div class="container">
+        <h1>Welcome to Number Theory</h1>
+        <h3>Game Discription :</h3>
+        <p>"The computer will generate a random number between 1 and 10. You have to guess the number by taking chances."</p>
+        <p>Enter your choice : <input type="number" id="guess"> </p>
+        <h3 id="hint"> Hint :</h3> 
+        <button  id="ckans" onclick="check_ans()">CHECK ANSWER</button> <br> <br>
+        <p id="ans"></p>
+        <h2>Have Fun!</h2>
+       </div> 
+        <script>
+            let rand = Math.floor(Math.random() * 10) + 1;
+            let guess = document.getElementById('guess').value;
+            function check_ans(){
+                if(rand == guess){
+                    document.getElementById("ans").innerHTML = "congrajulation! you enterd correct number";
+                    
+                }
+                else if(rand != guess){
+                    document.getElementById("ans").innerHTML = `sorry! you enterd wrong number, <br/> correct number is :${rand}`
+                }
+            }
+        </script>
+    
+</body>
+</html>

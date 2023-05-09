@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(backgrounf.avif);
+    background-size: cover;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+.navbar{
+    display: flex;
+    background-color: rgba(111, 155, 212, 0.535);
+    margin-top: 16px;
+    height: 47px;
+}
+.navlist{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 20px;
+    font-size: large;
+    font-weight: 500;
+}
+.navlist li a{
+    text-decoration: none;
+    color: white;
+}
+.join{
+    /* background-color: blueviolet; */
+    width: 50%;
+    text-align: right;
+    padding: 10px;
+    margin-right: 33px;
+}
+.logo img{
+    width: 80px;
+    height: 60px;
+    border-radius: 100%;
+    border: solid white;
+    margin: 10px;
+    margin-left: 80px;
+}
+.text {
+    width: 200px;
+    height: 32px;
+    border-radius: 7px;
+}
+.btn{
+    width: 9%;
+    height: 112%;
+    border-radius: 20px;
+    color: red;
+    background-color: lightblue;
+    font-size: 15px;
+    font-family: cursive;
+    cursor: pointer;
+}
+li a:hover{
+    text-decoration: underline white solid;
+    transition: 1s;
+}
+.container{
+    background-color: rgba(103, 182, 218, 0.545);
+    display: flex;
+    margin: 90px;
+    border-radius: 20px;
+}
+.leftbox{
+    /* background-color: yellow; */
+    width: 70%;
+}
+.rightbox{
+    /* background-color: lightblue; */
+    width: 30%;
+    justify-content: right;
+    display: flex;
+    height: 216px;
+    margin: 0%;
+}
+.rightbox img{
+    border-radius: 30px;
+    width: 70%;
+    height: 147%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+}
+.container2{
+    display: flex;
+    margin: 10%;
+    margin-top: 5%;
+    height: 205%;
+    margin-bottom: 2%;
+}
+.firstbox{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(125, 152, 162, 0.498);
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 40px;
+}
+.secondbox{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(125, 152, 162, 0.498);
+    border-radius: 22px;
+    padding: 40px;
+    margin-right: 20px;
+}
+.thirdbox{
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(125, 152, 162, 0.498);
+    border-radius: 22px;
+    padding: 40px;
+}
+.top{
+    margin-bottom: 20px;
+    font-size: large;
+}
+.firstbox:hover{
+    border-radius: 20% solid white;
+    
+}
+.container3{
+    display: flex;
+    /* background-color: lightcoral; */
+}
+.png img{
+    width: 63%;
+    margin-top: -26%;
+    margin-left: 10%;
+}
+.quote{
+    display: flex;
+    align-items: center;
+    height: 0%;
+    margin-top: 10%;
+    margin-left: 3%;
+    flex-direction: column;
+}
+.quote h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 255%;
+    color: white;
+}
+.footer{
+    color: white;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.597);
+}
+.kmore{
+    background-color: lightpink;
+}
